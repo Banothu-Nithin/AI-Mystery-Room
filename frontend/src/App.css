@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f8fafc;
+}
+
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #25345c 0%, #0b1020 55%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  border-bottom: 1px solid #334155;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.navbar span {
+  color: #cbd5e1;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 20px 50px;
+}
+
+.eyebrow {
+  color: #a5b4fc;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 1.12;
+  margin: 20px 0;
+  color: white;
+}
+
+.description {
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+
+.case-card {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #17213a;
+  border: 1px solid #475569;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.case-card label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #e2e8f0;
+}
+
+.case-card select {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #64748b;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+}
+
+.case-card button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.case-card button:hover {
+  background: #4f46e5;
+}
+
+.case-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  color: #a5f3fc;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+  border-top: 1px solid #334155;
+}
