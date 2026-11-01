@@ -33,7 +33,7 @@ function App() {
     setFinalResult(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/cases", {
+      const response = await fetch("https://ai-mystery-room-backend-bpcj.onrender.com/api/cases", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cases/${mystery.id}/clues/${clueId}/discover`,
+        `https://ai-mystery-room-backend-bpcj.onrender.com/api/cases/${mystery.id}/clues/${clueId}/discover`,
         {
           method: "POST",
           headers: {
@@ -116,7 +116,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cases/${mystery.id}/hints`,
+        `https://ai-mystery-room-backend-bpcj.onrender.com/api/cases/${mystery.id}/hints`,
         {
           method: "POST",
           headers: {
@@ -155,7 +155,7 @@ async function submitAccusation() {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/cases/${mystery.id}/accuse`,
+      `https://ai-mystery-room-backend-bpcj.onrender.com/api/cases/${mystery.id}/accuse`,
       {
         method: "POST",
         headers: {
